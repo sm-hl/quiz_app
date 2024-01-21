@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Quiz App</title>
+</head>
+<body>
+    <h2 class="title">Quiz App</h2>
+    <span id="bg1" class="bg"></span>
+    <span id="bg2" class="bg"></span>
+    <div class="container">
+        <!-- alert -->
+        <div class="alert hidden">
+            <i class="fa-solid fa-circle-xmark close"></i>
+            <div class="icon-alert">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div>
+                <h3>Alert!</h3>
+                <p>Please Check one answer below!!</p>
+            </div>
+        </div>
+        <!-- Question Card -->
+        <div class="card">
+            <h3>Question <span class="questionNbr">1</span> : <span class="question">What does CSS stand for?
+            </span></h3>
+            <div class="answers">
+                <div class="answer"><input class="checkboxAnswer" type="checkbox" name="" id="answer1"><label for="answer1" class="labelAnswer">Cascading Style Sheets </label></div>
+                <div class="answer"><input class="checkboxAnswer" type="checkbox" name="" id="answer2"><label for="answer2" class="labelAnswer">Computer Style Sheets </label></div>
+                <div class="answer"><input class="checkboxAnswer" type="checkbox" name="" id="answer3"><label for="answer3" class="labelAnswer">Creative Style Sheets </label></div>
+                <div class="answer"><input class="checkboxAnswer" type="checkbox" name="" id="answer4"><label for="answer4" class="labelAnswer">Colorful Style Sheets </label></div>
+            </div>
+            <div class="btn-box">
+                <div class="btns">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+                <div class="btn-send">
+                    <button class="send" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

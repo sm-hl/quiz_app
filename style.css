@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    position: relative;
+    top: 42px;
+    color: #109ac4;
+    font-size: 2rem;
+}
+#bg1,#bg2{
+    background-color: #4d727e;
+    padding: 12px;
+    position: absolute;
+    filter: blur(60px);
+}
+#bg1{
+    width: 400px;
+    height: 240px;
+    bottom: -20%;
+    left: 50%;
+    filter: blur(130px);
+}
+#bg2{
+    width: 640px;
+    height: 170px;
+    top: -25%;
+    right: 25%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #222;
+    color: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    width: 450px;
+    height: 350px;
+}
+
+.answers{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 12px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.answer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+/* ========inputs======== */
+input[type='checkbox']{
+    margin-left: 12px;
+    margin-right: 12px;
+} 
+/* ========buttons======== */
+.btn-box{
+    /* border: 1px solid #109ac4; */
+    border-radius: 20px;
+    padding: 22px;
+    /* background: linear-gradient(45deg,#54c9ec,#83a4ad,#83a4ad,#54c9ec); */
+    box-shadow: 0 0 5px #ddd;
+    position: relative;
+    bottom: -20px;
+}
+button{
+    font-weight: bold;
+}
+.btns{
+    display: flex;
+}
+.btn-send{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-send .send{
+    background-color: #4d727e;
+    color: #fff;
+    
+}
+.btns .prev,
+.btns .next,
+.btn-send .send{
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 3px solid transparent;
+    font-size: 0.8rem;
+}
+.btns .next{
+    margin-left: 22px;
+}
+.btns .prev:focus,
+.btns .next:focus,
+.btn-send .send:focus{
+    background-color: #777;
+}
+.btns .prev:hover,
+.btns .next:hover{
+    background-color: #777;
+    color: #fff;
+    /* border: 3px solid #4d727e; */
+}
+.btn-send .send:hover{
+    background-color: #222;
+    border: 3px solid #4d727e;
+}
+/*========alert========*/
+.hidden{
+    visibility: hidden;
+}
+.alert{
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    padding: 25px;
+    box-shadow: 0 0 12px #777;
+    z-index: 100;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.alert .icon-alert{
+    font-size: 2.5rem;
+    color: rgb(236, 41, 41);
+    margin-right: 12px;
+}
+.alert h3{
+    color: rgb(236, 41, 41);
+    margin-bottom: 5px;
+}
+.alert p{
+    font-size: 0.8rem;
+}
+.alert .close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
